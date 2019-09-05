@@ -1,11 +1,11 @@
 import React from 'react'
-import {Switch, Route, Redirect} from 'react-router-dom'
-import Home from './components/Home'
+import {Switch, Route} from 'react-router-dom'
+import Landing from './components/Landing'
 
 export default (
     <Switch>
         <Route exact path='/'>
-            <Home/>
+            <Landing/>
         </Route>
     </Switch>
 )
