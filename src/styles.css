@@ -6,8 +6,26 @@
 
 .landing{
     background-color: blueviolet;
+    width: 100vw;
+    height: 200vh;
 }
 
 .navbar{
     background-color: lightseagreen;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100vw;
+}
+
+#nav-logo{
+    margin-right: auto
+}
+
+.nav-item{
+    margin-right: 2em;
+}
+
+#nav-last-item{
+    margin-right: 4em;
 }
