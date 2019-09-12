@@ -4,9 +4,8 @@ import '../styles.css'
 
 export default function(){
     return(
-        <>
-        <Navbar/>
-        <h2 className="landing">Landing</h2>
-        </>
+        <div className="landing">
+            <Navbar/>
+        </div>
     )
 }
