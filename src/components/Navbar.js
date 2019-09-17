@@ -3,8 +3,8 @@ import React, {Component} from 'react'
 export default class Navbar extends Component {
     render(){
         return(
-            <div className="navbar">
-                <div>
+            <div className="navbar" style={{"color": "white"}}>
+                <div >
                     <h2 id="nav-logo">Nav Logo</h2>
                 </div>
                 <div id="nav-list">
