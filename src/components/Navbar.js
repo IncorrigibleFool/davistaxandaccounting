@@ -4,7 +4,7 @@ export default class Navbar extends Component {
     render(){
         return(
             <div className="navbar" style={{"color": "white"}}>
-                <div >
+                <div id="nav-logo-container">
                     <h2 id="nav-logo">Nav Logo</h2>
                 </div>
                 <div id="nav-list">
