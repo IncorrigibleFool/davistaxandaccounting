@@ -4,30 +4,25 @@
     box-sizing: border-box;
 }
 
-/* Landing */
+/* Slideshow */
 .slideshow-container{
     height: 100vh;
     width: 100%;
 }
 
-.main-slideshow{
+.slideshow-container .slideshow-item{
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(14, 41, 116, 0.55)), to(rgba(14, 41, 116, 0.55))), url("./assets/business_grayscale.jpg");
     background: linear-gradient(to bottom, rgba(14, 41, 116, 0.55) 0%, rgba(14, 41, 116, 0.55) 100%), url("./assets/business_grayscale.jpg");
     height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center;
+    display: none !important;
+    transition: opacity 2s ease-in-out;
 }
 
-/* Carousel (Landing) */
-.carousel .carousel-item{
-    opacity: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: block;
-    position: absolute;
-    transition: opacity 1s ease-in-out;
+.slideshow-container .active{
+    display: flex !important;
 }
 
 /* Navbar */

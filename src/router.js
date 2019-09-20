@@ -1,13 +1,13 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
-import Landing from './components/Landing'
+import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
 
 export default (
     <Switch>
         <Route exact path='/'>
-            <Landing/>
+            <Home/>
         </Route>
         <Route path='/about'>
             <About/>
