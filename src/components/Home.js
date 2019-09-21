@@ -6,10 +6,12 @@ import '../styles.css'
 
 export default function(){
     return(
+        <>
+        <Navbar/>
         <div>
-            <Navbar/>
             <Slideshow/>
             <Copyright/>
         </div>
+        </>
     )
 }

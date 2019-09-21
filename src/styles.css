@@ -10,19 +10,56 @@
     width: 100%;
 }
 
-.slideshow-container .slideshow-item{
+.slideshow-container .slideshow-color{
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(14, 41, 116, 0.55)), to(rgba(14, 41, 116, 0.55)));
+    background: linear-gradient(to bottom, rgba(14, 41, 116, 0.55) 0%, rgba(14, 41, 116, 0.55) 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.slideshow-container .slideshow-item1{
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(14, 41, 116, 0.55)), to(rgba(14, 41, 116, 0.55))), url("./assets/business_grayscale.jpg");
     background: linear-gradient(to bottom, rgba(14, 41, 116, 0.55) 0%, rgba(14, 41, 116, 0.55) 100%), url("./assets/business_grayscale.jpg");
     height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center;
-    display: none !important;
-    transition: opacity 2s ease-in-out;
+    opacity: 0;
+    transition: opacity 2s ease-out;
+    position: absolute;
+}
+
+.slideshow-container .slideshow-item2{
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(14, 41, 116, 0.55)), to(rgba(14, 41, 116, 0.55))), url("./assets/handshake_grayscale.jpg");
+    background: linear-gradient(to bottom, rgba(14, 41, 116, 0.55) 0%, rgba(14, 41, 116, 0.55) 100%), url("./assets/handshake_grayscale.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease-out;
+    position: absolute;
+}
+
+.slideshow-container .slideshow-item3{
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(14, 41, 116, 0.55)), to(rgba(14, 41, 116, 0.55))), url("./assets/accounting_grayscale.jpg");
+    background: linear-gradient(to bottom, rgba(14, 41, 116, 0.55) 0%, rgba(14, 41, 116, 0.55) 100%), url("./assets/accounting_grayscale.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease-out;
+    position: absolute;
 }
 
 .slideshow-container .active{
-    display: flex !important;
+    opacity: 1 !important;
+}
+
+.slideshow-container .standby{
+    opacity: 1 !important;
 }
 
 /* Navbar */
