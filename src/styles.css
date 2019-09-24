@@ -4,10 +4,50 @@
     box-sizing: border-box;
 }
 
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: absolute; z-index: 1000;
+    width: 100%;
+    height: 15vh;
+    color: white;
+}
+
+#nav-list{
+    display: flex;
+    align-items: center;
+}
+
+#nav-logo-container{
+    display: flex;
+    align-items: center;
+}
+
+#nav-logo{
+    margin-right: auto;
+    margin-left: 3em;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item{
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+#nav-last-item{
+    margin-right: 4em;
+}
+
 /* Slideshow */
 .slideshow-container{
     height: 100vh;
     width: 100%;
+    text-shadow: 1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black;
 }
 
 .slideshow-container .slideshow-color{
@@ -28,6 +68,11 @@
     opacity: 0;
     transition: opacity 2s ease-out;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .slideshow-container .slideshow-item2{
@@ -40,6 +85,11 @@
     opacity: 0;
     transition: opacity 2s ease-out;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .slideshow-container .slideshow-item3{
@@ -52,6 +102,11 @@
     opacity: 0;
     transition: opacity 2s ease-out;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .slideshow-container .active{
@@ -60,39 +115,6 @@
 
 .slideshow-container .standby{
     opacity: 1 !important;
-}
-
-/* Navbar */
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    height: 15vh;
-    border: black solid 1px;
-}
-
-#nav-list{
-    display: flex;
-    align-items: center;
-}
-
-#nav-logo-container{
-    display: flex;
-    align-items: center;
-}
-
-#nav-logo{
-    margin-right: auto;
-    margin-left: 3em;
-}
-
-.nav-item{
-    margin-right: 2em;
-}
-
-#nav-last-item{
-    margin-right: 4em;
 }
 
 /* Copyright */
