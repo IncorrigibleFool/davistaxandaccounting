@@ -23,7 +23,6 @@ export default class Navbar extends Component {
                         <h3 className="nav-item" id="nav-last-item">Contact</h3>
                     </Link>
                 </div>
-                
             </div>
             
         )
