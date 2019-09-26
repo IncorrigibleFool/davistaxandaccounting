@@ -3,9 +3,9 @@ import Navbar from './Navbar'
 
 export default function About(){
     return(
-        <>
-        <Navbar/>
-        <div>About Test</div>
-        </>
+        <div>
+            <Navbar/>
+            <div className="about-hero">About Test</div>
+        </div>
     )
 }

@@ -7,7 +7,7 @@ import '../styles.css'
 
 export default function(){
     return(
-        <div>
+        <div id="home">
             <Navbar/>
             <Slideshow/>
             <Services/>
