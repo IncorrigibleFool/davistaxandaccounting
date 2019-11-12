@@ -6,6 +6,8 @@ export default function About(){
         <div>
             <Navbar/>
             <div className="about-hero">About Test</div>
+            <img src={require("../assets/TRANG.jpg")}></img>
+            <img src={require("../assets/BRAD.jpg")}></img>
         </div>
     )
 }
