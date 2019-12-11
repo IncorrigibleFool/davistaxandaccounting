@@ -15,9 +15,22 @@
     color: white;
 }
 
-.navbar-scrolled{
+.nav-scrolled{
+    position: fixed;
     background-color: white;
+    color: black;
 }
+
+/* .nav-scrolled{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+    position: fixed;
+    color: black;
+} */
 
 #nav-list{
     display: flex;
@@ -37,6 +50,10 @@
 .nav-link{
     color: white;
     text-decoration: none;
+}
+
+.nav-link-scrolled{
+    color: black;
 }
 
 .nav-item{

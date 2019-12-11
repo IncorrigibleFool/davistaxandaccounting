@@ -6,7 +6,8 @@ import {faPhone} from '@fortawesome/free-solid-svg-icons'
 
 export default class Navbar extends Component {
     state = {
-        scroll: null
+        scroll: null,
+        navLink: null
     }
     
     componentDidMount(){
@@ -16,12 +17,14 @@ export default class Navbar extends Component {
     scrollEvent = () => {
         if (window.scrollY > 400){
             this.setState({
-                scroll: "nav-scrolled"
+                scroll: "nav-scrolled",
+                navLink: "nav-link-scrolled"
             })
         }
         else{
             this.setState({
-                scroll: null
+                scroll: null,
+                navLink: null
             })
         }
     } 
@@ -30,18 +33,18 @@ export default class Navbar extends Component {
         return(
             <div className={`navbar ${this.state.scroll}`}>
                 <div id="nav-logo-container">
-                    <HashLink className="nav-link" smooth to="/#home">
+                    <HashLink className={`nav-link ${this.state.navLink}`} smooth to="/#home">
                         <h2 id="nav-logo">Nav Logo</h2>
                     </HashLink>
                 </div>
                 <div id="nav-list">
-                    <Link className="nav-link" to='/about'>
+                    <Link className={`nav-link ${this.state.navLink}`} to='/about'>
                         <h3 className="nav-item">About</h3>
                     </Link>
-                    <HashLink className="nav-link" smooth to="/#services">
+                    <HashLink className={`nav-link ${this.state.navLink}`} smooth to="/#services">
                         <h3 className="nav-item">Services</h3>
                     </HashLink>
-                    <Link className="nav-link" to="/contact">
+                    <Link className={`nav-link ${this.state.navLink}`} to="/contact">
                         <h3 className="nav-item">Contact</h3>
                     </Link>
                     <h3 id="nav-last-item" className="nav-item">
