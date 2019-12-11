@@ -5,9 +5,30 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faPhone} from '@fortawesome/free-solid-svg-icons'
 
 export default class Navbar extends Component {
+    state = {
+        scroll: null
+    }
+    
+    componentDidMount(){
+        window.addEventListener('scroll', this.scrollEvent)
+    }
+
+    scrollEvent = () => {
+        if (window.scrollY > 400){
+            this.setState({
+                scroll: "nav-scrolled"
+            })
+        }
+        else{
+            this.setState({
+                scroll: null
+            })
+        }
+    } 
+    
     render(){
         return(
-            <div className="navbar">
+            <div className={`navbar ${this.state.scroll}`}>
                 <div id="nav-logo-container">
                     <HashLink className="nav-link" smooth to="/#home">
                         <h2 id="nav-logo">Nav Logo</h2>

@@ -69,18 +69,18 @@ export default class Slideshow extends Component{
                     <h1>CERTIFIED PUBLIC ACCOUNTANTS<br/>FOR YOU AND YOUR BUSINESS</h1>
                     <p>We make life easier for business owners and individuals by providing high-quality tax and accounting services. Our professionals take care of your tax and accounting needs so that you can get on with life and focus on what is most important to you.</p>
                     <HashLink smooth to="/#services">
-                        <button className="slideshow-button">Learn More</button>
+                        <button className="slideshow-button pointer">Learn More</button>
                     </HashLink>
                 </div>
                 <div className={`slideshow-item2 ${this.state.slide2}`}>
                     <h1>ADVISORS YOU CAN TRUST</h1>
                     <p>When it comes to your finances, you want a business partner who will look out for your best interests and keep you and your assets safe. With Davis Tax & Accounting, you can rest easy, knowing that your finances are in good hands.</p>
-                    <button onClick={() => this.button2()} className="slideshow-button">Get To Know Us</button>
+                    <button onClick={() => this.button2()} className="slideshow-button pointer">Get To Know Us</button>
                 </div>
                 <div className={`slideshow-item3 ${this.state.slide3}`}>
                     <h1>GET HELP TODAY</h1>
                     <p>Contact us today to receive a free initial consultation.</p>
-                    <button onClick={() => this.button3()} className="slideshow-button">Contact Us</button>
+                    <button onClick={() => this.button3()} className="slideshow-button pointer">Contact Us</button>
                 </div>
             </div>
         )
