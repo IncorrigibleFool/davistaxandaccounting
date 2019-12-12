@@ -30,7 +30,7 @@ export default class Navbar extends Component {
                 navLink: "nav-link-scrolled"
             })
         }
-        else if(window.scrollY < 200){
+        else if(window.scrollY < 90){
             this.setState({
                 scroll: null,
                 unscroll: null,
