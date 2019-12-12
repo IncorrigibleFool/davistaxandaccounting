@@ -19,6 +19,19 @@
     position: fixed;
     background-color: white;
     color: black;
+    transform: translateY(15vh);
+    bottom: 100%;
+    transition: all 0.5s;
+    border-bottom: solid 1px black;
+}
+
+.nav-unscrolled{
+    position: fixed;
+    background-color: white;
+    color: black;
+    transform: translateY(-15vh);
+    bottom: 85vh;
+    transition: all 0.5s;
 }
 
 /* .nav-scrolled{

@@ -7,6 +7,7 @@ import {faPhone} from '@fortawesome/free-solid-svg-icons'
 export default class Navbar extends Component {
     state = {
         scroll: null,
+        unscroll: null,
         navLink: null
     }
     
@@ -18,12 +19,21 @@ export default class Navbar extends Component {
         if (window.scrollY > 400){
             this.setState({
                 scroll: "nav-scrolled",
+                unscroll: null,
                 navLink: "nav-link-scrolled"
             })
         }
-        else{
+        else if(window.scrollY <= 400 && this.state.scroll === "nav-scrolled"){
             this.setState({
                 scroll: null,
+                unscroll: "nav-unscrolled",
+                navLink: "nav-link-scrolled"
+            })
+        }
+        else if(window.scrollY < 200){
+            this.setState({
+                scroll: null,
+                unscroll: null,
                 navLink: null
             })
         }
@@ -31,7 +41,7 @@ export default class Navbar extends Component {
     
     render(){
         return(
-            <div className={`navbar ${this.state.scroll}`}>
+            <div className={`navbar ${this.state.scroll} ${this.state.unscroll}`}>
                 <div id="nav-logo-container">
                     <HashLink className={`nav-link ${this.state.navLink}`} smooth to="/#home">
                         <h2 id="nav-logo">Nav Logo</h2>
