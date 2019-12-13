@@ -16,14 +16,14 @@ export default class Navbar extends Component {
     }
 
     scrollEvent = () => {
-        if (window.scrollY > 400){
+        if (window.scrollY > 200){
             this.setState({
                 scroll: "nav-scrolled",
                 unscroll: null,
                 navLink: "nav-link-scrolled"
             })
         }
-        else if(window.scrollY <= 400 && this.state.scroll === "nav-scrolled"){
+        else if(window.scrollY <= 200 && this.state.scroll === "nav-scrolled"){
             this.setState({
                 scroll: null,
                 unscroll: "nav-unscrolled",

@@ -34,17 +34,6 @@
     transition: all 0.5s;
 }
 
-/* .nav-scrolled{
-    display: flex;
-    justify-content: space-between;
-    z-index: 1000;
-    width: 100%;
-    height: 15vh;
-    background-color: white;
-    position: fixed;
-    color: black;
-} */
-
 #nav-list{
     display: flex;
     align-items: center;
@@ -180,9 +169,36 @@
 }
 
 .about-photo{
-    height: 20em;
-    width: 20em;
+    height: 25em;
+    width: 25em;
     border-radius: 50%;
+    position: absolute;
+}
+
+.left{
+    left: 19%;
+    box-shadow: -1em 1em 1em rgba(0, 0, 0, 0.534)
+}
+
+.left-shadow{
+    box-shadow: -1em 1em 1em rgba(0, 0, 0, 0.534);
+}
+
+.right{
+    right: 19%;
+    box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.534);
+}
+
+.right-shadow{
+    box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.534);
+}
+
+.red-circle{
+    height: 25em;
+    width: 25em;
+    border-radius: 50%;
+    background-color: rgb(184, 14, 14);
+    position: relative;
 }
 
 /* Contact */

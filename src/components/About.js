@@ -12,8 +12,12 @@ export default class About extends Component{
                 <Navbar/>
                 <div className="about-hero">About Test</div>
                 <div id="profile-container">
-                    <img className="about-photo" alt="trangImg" src={require("../assets/TRANG.jpg")}></img>
-                    <img className="about-photo" alt="bradImg" src={require("../assets/BRAD.jpg")}></img>
+                    <div className="red-circle left-shadow">
+                        <img className="about-photo left" alt="trangImg" src={require("../assets/TRANG.jpg")}></img>
+                    </div>
+                    <div className="red-circle right-shadow">
+                        <img className="about-photo right" alt="bradImg" src={require("../assets/BRAD.jpg")}></img>
+                    </div>
                 </div>  
             </div>
         )
