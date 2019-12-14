@@ -11,7 +11,7 @@
     position: absolute;
     z-index: 1000;
     width: 100%;
-    height: 15vh;
+    height: 14vh;
     color: white;
 }
 
@@ -19,7 +19,7 @@
     position: fixed;
     background-color: white;
     color: black;
-    transform: translateY(15vh);
+    transform: translateY(14vh);
     bottom: 100%;
     transition: all 0.5s;
     border-bottom: solid 1px black;
@@ -29,8 +29,8 @@
     position: fixed;
     background-color: white;
     color: black;
-    transform: translateY(-15vh);
-    bottom: 85vh;
+    transform: translateY(-14vh);
+    bottom: 86vh;
     transition: all 0.5s;
 }
 
@@ -163,9 +163,19 @@
     color: white;
 }
 
+.spacing{
+    margin-top: 5em;
+}
+
 #profile-container{
     display: flex;
     flex-direction: column;
+}
+
+.individual-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .about-photo{
