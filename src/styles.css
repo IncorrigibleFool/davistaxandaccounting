@@ -164,7 +164,7 @@
 }
 
 .spacing{
-    margin-top: 5em;
+    margin-top: 6em;
 }
 
 #profile-container{
@@ -175,7 +175,7 @@
 .individual-profile{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .about-photo{
@@ -190,8 +190,9 @@
     box-shadow: -1em 1em 1em rgba(0, 0, 0, 0.534)
 }
 
-.left-shadow{
+.left-circle{
     box-shadow: -1em 1em 1em rgba(0, 0, 0, 0.534);
+    margin-left: 5em;
 }
 
 .right{
@@ -199,8 +200,9 @@
     box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.534);
 }
 
-.right-shadow{
+.right-circle{
     box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.534);
+    margin-right: 5em;
 }
 
 .red-circle{
@@ -210,6 +212,34 @@
     background-color: rgb(184, 14, 14);
     position: relative;
 }
+
+.profile-text{
+    width: 45%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.profile-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-title{
+    color: #000a5d;
+}
+
+.text-spacing{
+    margin-top: 1.2em;
+}
+
+/* .profile-text-right{
+    margin-right: 40%;
+}
+
+.profile-text-left{
+    margin-left: 40%;
+} */
 
 /* Contact */
 .contact-hero{
