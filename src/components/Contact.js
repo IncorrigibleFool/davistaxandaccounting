@@ -10,7 +10,7 @@ export default class Contact extends Component{
         return(
             <div>
                 <Navbar/>
-                <div className="contact-hero">Contact Test</div>
+                <h1 className="contact-hero">Contact</h1>
             </div>
         )
     }

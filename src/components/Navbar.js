@@ -44,7 +44,8 @@ export default class Navbar extends Component {
             <div className={`navbar ${this.state.scroll} ${this.state.unscroll}`}>
                 <div id="nav-logo-container">
                     <HashLink className={`nav-link ${this.state.navLink}`} smooth to="/#home">
-                        <h2 id="nav-logo">Nav Logo</h2>
+                        {this.state.unscroll === null && this.state.scroll === null && <img id="nav-logo" src={require("../assets/davis-logo-whitescale.png")}/>}
+                        {this.state.navLink === "nav-link-scrolled" && <img id="nav-logo" src={require("../assets/davis-logo.png")}/>}
                     </HashLink>
                 </div>
                 <div id="nav-list">
