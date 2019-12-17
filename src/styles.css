@@ -158,6 +158,13 @@
     align-items: center;
 }
 
+.individual-service{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 /* About */
 .about-hero{
     background: -webkit-gradient(linear, left top, left bottom, from( rgba(184, 14, 14, 0.7)), to( rgba(184, 14, 14, 0.7))), url("./assets/meeting_grayscale.jpg");
