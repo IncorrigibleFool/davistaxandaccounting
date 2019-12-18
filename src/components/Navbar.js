@@ -37,7 +37,11 @@ export default class Navbar extends Component {
                 navLink: null
             })
         }
-    } 
+    }
+
+    componentWillUnmount(){
+        window.removeEventListener('scroll', this.scrollEvent)
+    }
     
     render(){
         return(
