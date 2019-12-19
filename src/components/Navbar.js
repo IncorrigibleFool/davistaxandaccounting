@@ -68,7 +68,6 @@ export default class Navbar extends Component {
                     </h3>
                 </div>
             </div>
-            
         )
     }
 }

@@ -66,7 +66,8 @@ export default class Slideshow extends Component{
             <div className="slideshow-container">
                 <div className="slideshow-color"></div>
                 <div className={`slideshow-item1 ${this.state.slide1}`} style={{"display": "flex", "flexDirection": "column", "justifyContent": "center", "alignItems": "center", "color": "white"}}>
-                    <h1>CERTIFIED PUBLIC ACCOUNTANTS<br/>FOR YOU AND YOUR BUSINESS</h1>
+                    <h1>CERTIFIED PUBLIC ACCOUNTANTS</h1>
+                    <h1>FOR YOU AND YOUR BUSINESS</h1>
                     <p>We make life easier for business owners and individuals by providing high-quality tax and accounting services. Our professionals take care of your tax and accounting needs so that you can get on with life and focus on what is most important to you.</p>
                     <HashLink smooth to="/#services">
                         <button className="slideshow-button pointer">Learn More</button>

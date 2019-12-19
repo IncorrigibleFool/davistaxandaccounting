@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+/* General */
+.spacing{
+    margin-top: 6em;
+}
+
+.mini-spacing{
+    margin-top: 3em;
+}
+
 /* Navbar */
 .navbar{
     display: flex;
@@ -149,6 +158,14 @@
     background-color: transparent;
     color: white;
     border: 2px solid white;
+    height: 40px;
+    width: 120px;
+    /* font-size: 2em; */
+}
+
+.slideshow-button:hover{
+    background-color: white;
+    color: black;
 }
 
 /* Services */
@@ -179,10 +196,6 @@
     align-items: center;
     flex-direction: column;
     color: white;
-}
-
-.spacing{
-    margin-top: 6em;
 }
 
 #profile-container{

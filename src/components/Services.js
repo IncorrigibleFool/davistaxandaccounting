@@ -1,4 +1,6 @@
 import React from 'react'
+import {faPhone} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Services(){
     return(
@@ -47,6 +49,16 @@ export default function Services(){
                     <p>QuickBooks is a great and widely-used bookkeeping software for small businesses. However, setting up Quickbooks for small businesses can be overwhelming, especially for those with little or no accounting and bookkeeping background. Getting off to a good start is critical to your business getting the full benefit of the software and running its books smoothly going forward. We can help get your business up and running in Quickbooks in no time. </p>
                 </div>
             </div>
+            <div className="spacing"></div>
+            <h1>Questions?</h1>
+            <p>Contact us today for a free initial consultation</p>
+            <div className="mini-spacing"></div>
+            <button>
+                &nbsp;
+                <FontAwesomeIcon icon={faPhone}/>
+                &nbsp;Contact Us&nbsp;
+            </button>
+            <div className="spacing"></div>
         </div>
     )
 }
