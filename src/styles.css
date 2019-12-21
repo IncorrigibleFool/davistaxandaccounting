@@ -13,6 +13,13 @@
     margin-top: 3em;
 }
 
+.blue-divider{
+    height:5px;
+    width: 8%;
+    min-width: 110px;
+    background-color: #000a5d;
+}
+
 /* Navbar */
 .navbar{
     display: flex;
@@ -178,9 +185,24 @@
 .individual-service{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin:0 10% 0 10%;
+}
+
+.service-image-container{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-image{
+    height: 400px;
+}
+
+.individual-service-text{
+    width: 40%;
 }
 
 /* About */
